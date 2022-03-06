@@ -1,14 +1,13 @@
 {
   "manifest_version": 2,
-  "name": "Chrometana - Redirect Bing Somewhere Better",
-  "short_name": "Chrometana",
-  "description": "Redirect all Bing (and therefore Cortana) searches to a search engine of your choice!",
+  "name": "Redirect Terrasoft RU to UA domain",
+  "short_name": "Terrasoft-Redirect",
+  "description": "Automatic redirect from `terrasoft.ru` to `terrasoft.ua` domain.",
   "version": "3.0.0",
   "permissions": [
-    "*://*.bing.com/",
+    "*://*.terrasoft.ru/",
     "webRequest",
     "webRequestBlocking",
-    "storage",
     "background"
   ],
   "background": {
@@ -16,7 +15,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://*.bing.com/search*"],
+      "matches": ["*://*.terrasoft.ru/*"],
       "js": ["background/redirect.js"]
     }
   ],
@@ -24,9 +23,5 @@
     "32": "images/logo-32.png",
     "64": "images/logo-64.png",
     "128": "images/logo-128.png"
-  },
-  "browser_action": {
-    "default_title": "Chrometana",
-    "default_popup": "options.html"
   }
 }

@@ -1,12 +1,12 @@
 {
-  "name": "chrometana",
-  "description": "Redirect Bing Somewhere Better http://Chrometana.Theo.li",
+  "name": "terrasoftredirect",
+  "description": "Automatic redirect from `terrasoft.ru` to `terrasoft.ua` domain.",
   "author": "Theo Browne",
   "version": "3.0.0",
   "main": "index.js",
   "scripts": {
     "build": "webpack && npm run copy:dist",
-    "copy:dist": "cp ./src/options.html manifest.json ./dist && cp -r ./background ./dist && cp -r ./images ./dist",
+    "copy:dist": "cp manifest.json ./dist && cp -r ./background ./dist && cp -r ./images ./dist",
     "test": "jshint --exclude ./node_modules ."
   },
   "devDependencies": {
