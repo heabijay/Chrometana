@@ -1,7 +1,6 @@
 module.exports = {
   mode: "production",
   entry: {
-    popup: "./src/popup.jsx",
   },
   devtool: "source-map",
   output: {
